@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e7d3d3, #dcdcdc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGO */
+.top-logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.top-logo h1 {
+  color: #b31217;
+  margin: 5px 0 0;
+}
+
+.top-logo p {
+  font-size: 13px;
+  color: #777;
+}
+
+/* CARD */
+.card {
+  background: #f3f3f3;
+  padding: 40px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+h2 {
+  margin: 0 0 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* INPUT BASE */
+label {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #e6c7c7;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(to right, #b31217, #e52d27);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background: #e6d2d2;
+  margin-top: 50px;
+  padding: 25px 0;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.footer h3 {
+  color: #b31217;
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+}
