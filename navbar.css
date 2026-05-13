@@ -1,0 +1,39 @@
+.site-nav {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 min(34px, 4vw);
+  border-bottom: 1px solid #efe3e3;
+  background: rgba(253, 249, 249, 0.95);
+}
+
+.brand {
+  color: var(--accent);
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.site-nav nav {
+  display: flex;
+  gap: 36px;
+}
+
+.site-nav nav a.active {
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+}
+
+.right-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: white;
+}
