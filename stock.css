@@ -1,0 +1,8 @@
+.stock-summary-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.summary-box {
+  padding: 20px;
+}

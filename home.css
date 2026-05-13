@@ -1,0 +1,32 @@
+.hero-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 70px 40px;
+}
+
+.hero-copy h1 {
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.hero-copy p {
+  margin-top: 20px;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 26px;
+}
+
+.feature-card {
+  padding: 30px;
+}
+
+.testimonial-block {
+  padding: 70px 0;
+}
+
+.quote-card {
+  padding: 40px;
+}

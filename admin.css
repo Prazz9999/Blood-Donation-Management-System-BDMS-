@@ -1,0 +1,8 @@
+.admin-page {
+  background: #fbf4f4;
+}
+
+.split-header {
+  display: flex;
+  justify-content: space-between;
+}

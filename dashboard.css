@@ -1,0 +1,12 @@
+.dashboard-head h1 {
+  font-size: 60px;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.metric-card {
+  padding: 20px;
+}
