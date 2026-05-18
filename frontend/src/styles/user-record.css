@@ -1,0 +1,222 @@
+/* ==================== GLOBAL WRAPPER ==================== */
+.user-records-container {
+    background-color: #FCF5F5; /* Soft pink background from design */
+    padding: 1rem 5% 4rem 5%;
+    min-height: 100vh;
+}
+
+/* ==================== HEADER ==================== */
+.user-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2.5rem;
+}
+
+.header-text h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.header-text p {
+    color: #666;
+    max-width: 450px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.btn-add-record {
+    background-color: #C92A2A;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.btn-add-record:hover { opacity: 0.9; }
+
+/* ==================== FILTERS ==================== */
+.user-filters-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.filter-search-box {
+    flex: 2;
+    background: #FDF2F2;
+    border-radius: 12px;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filter-search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.filter-dropdown-card {
+    flex: 1;
+    background: #FDF2F2;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+}
+
+.filter-dropdown-card label {
+    font-size: 10px;
+    font-weight: 800;
+    color: #A8A2A2;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.select-wrapper { display: flex; justify-content: space-between; align-items: center; }
+.select-wrapper select { background: transparent; border: none; font-weight: 700; outline: none; cursor: pointer; width: 100%; }
+
+/* ==================== TABLE ==================== */
+.table-header-grid {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1fr 1fr 0.5fr;
+    padding: 1rem 1.5rem;
+    font-size: 11px;
+    font-weight: 900;
+    color: #A8A2A2;
+    letter-spacing: 1px;
+}
+
+.table-rows { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
+
+.table-row-grid {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1fr 1fr 0.5fr;
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid #F8F1F1;
+    align-items: center;
+}
+
+.user-avatar-navy {
+    width: 44px;
+    height: 44px;
+    background-color: #0D1B2A; /* Dark navy square from UI */
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.user-identity-cell { display: flex; align-items: center; gap: 1rem; }
+.user-name { font-weight: 800; display: block; font-size: 1rem; color: #1A1A1A; }
+.user-email { font-size: 12px; color: #888; }
+
+.role-pill { padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 800; }
+.role-pill.donor { background-color: #EBF5FF; color: #3B82F6; }
+.role-pill.seeker { background-color: #FFF2ED; color: #EA580C; }
+.role-pill.admin { background-color: #C92A2A; color: white; }
+
+.blood-box-pink { background: #FCE8E9; color: #C92A2A; padding: 6px 12px; border-radius: 8px; font-weight: 900; }
+
+.status-dot { font-size: 14px; }
+.status-dot.active { color: #0E8750; }
+.status-dot.pending { color: #F59E0B; }
+.status-dot.inactive { color: #9CA3AF; }
+.status-text { font-weight: 700; margin-left: 8px; font-size: 13px; color: #333; }
+
+/* ==================== UTILITY MENU (NEW) ==================== */
+.utility-cell { position: relative; }
+.btn-more { background: none; border: none; cursor: pointer; color: #A8A2A2; transition: color 0.2s; }
+.btn-more:hover { color: #1A1A1A; }
+
+.floating-menu {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 100;
+    width: 160px;
+    padding: 8px 0;
+    border: 1px solid #EEE;
+}
+
+.floating-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #444;
+}
+
+.floating-menu button:hover { background: #FDF2F2; color: #C92A2A; }
+.delete-btn { color: #C92A2A !important; border-top: 1px solid #F5F5F5 !important; }
+
+/* ==================== PAGINATION ==================== */
+.table-footer-pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    font-weight: 700;
+    color: #A8A2A2;
+    font-size: 13px;
+}
+
+.pagination-controls { display: flex; gap: 8px; }
+.pagination-controls button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #EEE;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 800;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.pagination-controls button.active { 
+    background: #C92A2A; 
+    color: white; 
+    border-color: #C92A2A; 
+}
+
+.modal-overlay { 
+    position: fixed; 
+    top: 0; left: 0; 
+    width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.3); backdrop-filter: blur(4px); 
+    display: flex; align-items: 
+    center; justify-content: center; z-index: 1000; 
+}
+.modal-content { background: white; padding: 2rem; border-radius: 12px; width: 420px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+.modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.modal-header h2 { font-weight: 900; font-size: 1.5rem; margin: 0; }
+
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 11px; font-weight: 800; color: #888; margin-bottom: 6px; letter-spacing: 0.5px; }
+.form-group input, .form-group select { 
+    width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid #EEE; 
+    outline: none; font-family: inherit; font-weight: 600;
+}
+.form-group input:focus { border-color: #C92A2A; }
+.form-row { display: flex; gap: 1rem; }
+.submit-btn { 
+    width: 100%; padding: 1rem; background: #C92A2A; color: white; 
+    border: none; border-radius: 8px; font-weight: 800; margin-top: 1rem; cursor: pointer; 
+}

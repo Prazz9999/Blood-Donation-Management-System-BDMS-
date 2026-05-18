@@ -1,0 +1,280 @@
+/* CONTAINER & BACKGROUND */
+.camp-page-container {
+  padding: 1rem 0;
+  background-color: #FCF5F5; /* Match design pink background */
+  min-height: 100vh;
+}
+
+/* HEADER */
+.camp-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.mini-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #C92A2A;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.header-text h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -2px;
+}
+
+.header-text p {
+  color: #666;
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.btn-schedule {
+  background-color: #C92A2A;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* TAB BAR */
+.active-schedule-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.tab-group {
+  display: flex;
+  background: #F8EDED;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.tab-btn {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 800;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  color: #A8A2A2;
+}
+
+.tab-btn.active {
+  background: #FCE8E9;
+  color: #C92A2A;
+}
+
+/* MAIN LAYOUT */
+.camp-main-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* CAMP CARDS */
+.camp-entry-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  border-left: 4px solid transparent;
+}
+
+.camp-entry-card:first-child {
+  border-left-color: #C92A2A; /* Design red indicator */
+}
+
+.date-tile {
+  background-color: #F8F1F1;
+  width: 70px;
+  height: 90px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-day { font-size: 1.8rem; font-weight: 900; color: #C92A2A; line-height: 1; }
+.d-month { font-size: 0.8rem; font-weight: 800; color: #666; margin-top: 4px; }
+
+.camp-info-main { flex: 1; }
+.info-top-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+
+.priority-badge {
+  background-color: #EBF5FF;
+  color: #3B82F6;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.time-text { font-size: 13px; font-weight: 700; color: #888; }
+.camp-info-main h3 { font-size: 1.2rem; font-weight: 800; margin: 0 0 10px 0; }
+.info-bottom-row { display: flex; gap: 20px; color: #888; font-size: 13px; font-weight: 600; }
+.loc-item, .donor-item { display: flex; align-items: center; gap: 6px; }
+
+.camp-entry-actions { display: flex; flex-direction: column; justify-content: space-between; color: #A8A2A2; }
+.action-btn { background: none; border: none; cursor: pointer; color: inherit; }
+
+/* SIDEBAR */
+.sidebar-card {
+  background: #FDF2F2;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.logistics h3 { font-size: 1rem; font-weight: 900; margin-bottom: 1.5rem; }
+
+.logistics-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.log-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.icon-red { color: #C92A2A; }
+.icon-blue { color: #3B82F6; }
+.icon-pink { color: #EC4899; }
+
+.log-text strong { display: block; font-size: 13px; font-weight: 800; }
+.log-text span { font-size: 11px; font-weight: 600; color: #888; }
+
+.alert-card {
+  background: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.alert-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+.alert-content {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  color: white;
+}
+
+.alert-label { font-size: 10px; font-weight: 900; color: #FFD4D4; letter-spacing: 1px; }
+.alert-content h4 { font-size: 1.1rem; font-weight: 800; margin: 4px 0; }
+.alert-content p { font-size: 12px; opacity: 0.8; margin: 0; }
+
+/* MODAL FIXES (For image_6fbaca.png) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  width: 440px;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.modal-header h2 { font-weight: 900; font-size: 1.5rem; margin: 0; }
+.close-x { background: none; border: none; cursor: pointer; color: #888; }
+
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; font-size: 12px; font-weight: 800; color: #888; margin-bottom: 6px; }
+.form-group input { 
+  width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid #EEE; 
+  outline: none; font-weight: 600; font-family: inherit;
+}
+.form-group input:focus { border-color: #C92A2A; }
+
+.modal-footer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn-cancel {
+  flex: 1; padding: 0.8rem; border-radius: 8px; border: 1px solid #EEE;
+  background: white; font-weight: 700; cursor: pointer;
+}
+
+.btn-confirm-red {
+  flex: 1; padding: 0.8rem; border-radius: 8px; border: none;
+  background: #C92A2A; color: white; font-weight: 800; cursor: pointer;
+}
+
+/* HEADER BUTTON FIX */
+.btn-schedule-red {
+  background-color: #C92A2A;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* SIDEBAR ALERT BANNER */
+.alert-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), 
+              url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=400&q=80');
+  background-size: cover;
+  color: white;
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
