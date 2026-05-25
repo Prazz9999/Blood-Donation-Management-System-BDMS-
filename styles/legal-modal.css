@@ -1,0 +1,138 @@
+/* =========================================================
+   LEGAL MODAL — shared across all footer contexts
+   ========================================================= */
+
+.legal-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  animation: lm-fadeIn 0.2s ease;
+}
+
+@keyframes lm-fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.legal-modal-box {
+  background: #FFFFFF;
+  width: 520px;
+  max-width: calc(100vw - 40px);
+  max-height: 80vh;
+  border-radius: 18px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: lm-slideUp 0.25s ease;
+}
+
+@keyframes lm-slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.legal-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px 20px 28px;
+  border-bottom: 1px solid #F5E6E6;
+  flex-shrink: 0;
+}
+
+.legal-modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  color: #1A1A1A;
+  letter-spacing: -0.5px;
+}
+
+.legal-modal-close-btn {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.legal-modal-close-btn:hover {
+  background: #FCE8E9;
+  border-color: #C92A2A;
+  color: #C92A2A;
+}
+
+.legal-modal-body {
+  padding: 24px 28px 32px 28px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.legal-modal-eyebrow {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #C92A2A;
+  background: #FCE8E9;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.legal-modal-body p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.75;
+  margin: 0 0 14px 0;
+  font-weight: 500;
+}
+
+.legal-modal-body ul {
+  margin: 0 0 14px 0;
+  padding-left: 20px;
+}
+
+.legal-modal-body ul li {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.legal-modal-body strong {
+  color: #1A1A1A;
+  font-weight: 800;
+  display: block;
+  margin: 20px 0 8px 0;
+  font-size: 13px;
+}
+
+/* Footer trigger buttons — shared style */
+.footer-modal-trigger-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.2s;
+}
